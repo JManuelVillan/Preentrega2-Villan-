@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   font-family: "Italianno";
+   background-color: #5C6F68;
+   }
+
+h1 {
+      color: #95D9C3;
+      text-align: left;
+      font-size: 80px;
+}
+
+body {
+   background-image: url(../assets/images/background1.jpg);
+}
+
+#navegacionSuperior {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 5px;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+ul li {
+   text-decoration: none;
+   display: inline-block;
+   text-align: right;
+   margin-right: 20px;
+   margin: 0 30px;
+}
+
+a {
+   color: #A7FFF6;
+   font-family: "Roboto";
+   text-decoration: none;
+}
+
+h2 {
+   text-align: center;
+   font-family: "Roboto";
+   font-size: 40px;
+   background-color: #8AA39B;
+   color: #A7FFF6;
+   height: 100px;
+}
+
+p {
+   background-color: #8AA39B;
+   text-align: center;
+   font-family: "Roboto";
+   font-size: 30px;
+   color: #A7FFF6;
+}
+
+#contactanos {
+   font-family: "Pacifico";
+}
+
+#descripcion {
+   height: 100px;
+}
+
+#segundoTexto {
+   background-color: #A7FFF6;
+   color: #5C6F68;
+   margin-top: 100px;
+}
+
+#imagenesEjemplo {
+   display: flex;
+   justify-content: center;
+   background-color: #A7FFF6;
+   padding: 50px;
+}
+
+#imagen1 {
+   padding-right: 50px;
+   height: 200px;
+}
+
+#imagen2 {
+   padding-left: 50px;
+   height: 200px;
+}
+
+.redesSociales {
+   height: 80px;
+}
+
+#navegacionInferior {
+   background-color: #8AA39B;
+   display: flex;
+   margin-top: 100px;
+   justify-content: space-between;
+   padding-top: 20px;
+}
+
+#facebook {
+   padding-left: 50px;
+}
+
+#instagram {
+   padding-right: 750px;
+}
+
+#contactanos {
+   padding-right: 50px;
+}
+
+
+
+
