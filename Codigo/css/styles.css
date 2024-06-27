@@ -9,116 +9,140 @@
    padding: 0;
 }
 
-header {
-   font-family: "Italianno";
-   background-color: #5C6F68;
-   }
-
 h1 {
-      color: #95D9C3;
-      text-align: left;
-      font-size: 80px;
+   font-family: Italianno;
+   color: #95D9C3;
+   grid-area: titulo;
+   font-size: 40px;
 }
 
 body {
-   background-image: url(../assets/images/background1.jpg);
+   background-color: #95D9C3;
 }
 
 #navegacionSuperior {
-   display: flex;
+   background-color: #5C6F68;
+   display: grid;
+   grid-template-areas: 
+   "titulo secciones"
+   ;
    align-items: center;
-   justify-content: space-between;
-   padding-top: 5px;
-   padding-left: 5%;
-   padding-right: 5%;
+   justify-items: center;
 }
 
 ul li {
-   text-decoration: none;
-   display: inline-block;
-   text-align: right;
-   margin-right: 20px;
-   margin: 0 30px;
+   grid-area: secciones;
 }
 
 a {
-   color: #A7FFF6;
-   font-family: "Roboto";
    text-decoration: none;
-}
-
-h2 {
-   text-align: center;
-   font-family: "Roboto";
-   font-size: 40px;
-   background-color: #8AA39B;
-   color: #A7FFF6;
-   height: 100px;
-}
-
-p {
-   background-color: #8AA39B;
-   text-align: center;
-   font-family: "Roboto";
-   font-size: 30px;
    color: #A7FFF6;
 }
 
-#contactanos {
-   font-family: "Pacifico";
-}
-
-#descripcion {
-   height: 100px;
-}
-
-#segundoTexto {
-   background-color: #A7FFF6;
-   color: #5C6F68;
-   margin-top: 100px;
-}
-
-#imagenesEjemplo {
-   display: flex;
+#contenido {
+   display:grid;
    justify-content: center;
-   background-color: #A7FFF6;
-   padding: 50px;
 }
 
-#imagen1 {
-   padding-right: 50px;
-   height: 200px;
+main h2 {
+   display: grid;
+   justify-content: center;
+   font-family: Italianno;
+   font-size: 55px; 
 }
 
-#imagen2 {
-   padding-left: 50px;
-   height: 200px;
+#botonEnviar {
+   background-color: #5C6F68;
+   color: #A7FFF6;
 }
 
 .redesSociales {
-   height: 80px;
+   display: grid;
+   padding: 5px;
 }
 
 #navegacionInferior {
-   background-color: #8AA39B;
-   display: flex;
-   margin-top: 100px;
-   justify-content: space-between;
-   padding-top: 20px;
+   background-color: #5C6F68;
+   display: grid;
+   grid-template-columns: 2fr 2fr 2fr;
+   grid-template-areas: 
+   "logo1 logo2 contacto"
+   ;
+   align-items: center;
+}
+
+.redes {
+   width: 50px;
+   height: 50px;
 }
 
 #facebook {
-   padding-left: 50px;
+   width: 100%;
+   grid-area: logo1;
 }
 
 #instagram {
-   padding-right: 750px;
+   width: 100%;
+   grid-area: logo2;
 }
 
 #contactanos {
-   padding-right: 50px;
+   grid-area: contacto;
+   font-family: Pacifico;
+   padding: 5px;
 }
 
+@media (min-width: 1024px) {
+   h1 {
+      font-family: Italianno;
+      color: #95D9C3;
+      grid-area: titulo;
+      font-size: 80px;
+      width: 100%;
+      text-align: left;
+      padding-left: 50px;
+   }
 
+   .secciones {
+      display: inline-block;
+      justify-content: center;
+      padding: 35px;
+      font-size: large;
+   }
 
+   main h2 {
+      font-size: 100px;
+      padding: 40px;
+   }
+
+   #navegacionInferior {
+      background-color: #5C6F68;
+      display: grid;
+      grid-template-columns: 1fr 10fr 2fr;
+      grid-template-areas: 
+      "facebook instagram contacto"
+      ;
+      justify-content: start;
+      align-items: center;
+
+   }
+
+   #facebook {
+      grid-area: faccebook;
+   }
+
+   #instagram {
+      grid-area: instagram;
+   }
+
+   #linkContacto {
+      grid-area: contacto;
+   }
+
+   #contactanos {
+      display: flex;
+      justify-content: right;
+      padding-right: 20px;
+   }
+}
 
