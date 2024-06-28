@@ -55,8 +55,8 @@
 #segundoTexto {
    background-color: #A4F9C8;
    text-align: center;
-   font-family: RobotoMono;
-   font-size: 20px;
+   font-family: Roboto;
+   font-size: 18px;
 }
 
 #imgEjemplo {
@@ -90,6 +90,11 @@
       padding: 40px;
    }
 
+   #segundoTexto {
+      font-size: 25px;
+      font-family: Roboto;
+   }
+
    #imgEjemplo {
       text-align: center;
       padding-top: 20px;
@@ -98,16 +103,20 @@
    #imagen2 {
       padding-bottom: 20px;
    }
+/* Main Contacto */
+   #encabezadoContacto {
+      font-size: 90px;
+   }
+
 /* Footer */
    #navegacionInferior {
       background-color: #5C6F68;
-      display: grid;
       grid-template-columns: 1fr 10fr 2fr;
       grid-template-areas: 
       "facebook instagram contacto"
       ;
       justify-content: start;
-      align-content: center;
+      align-items: center;
    }
 
    #facebook {
@@ -123,7 +132,7 @@
    }
 
    #contactanos {
-      display: flex;
+      display: grid;
       justify-content: right;
       padding-right: 20px;
    }
