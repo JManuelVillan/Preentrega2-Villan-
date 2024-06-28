@@ -3,56 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="assets/icons/logo-avion.png" type="image/x-icon">
     <title>TurismoArg</title>
 </head>
-
 <body>
-    <header>
+    <header> <!--NavBar-->
         <nav id="navegacionSuperior">
             <h1>TurismoArg</h1>
             <ul>
-                <li> <a href="./index.html">Home</a></li>
-                <li><a href="./pages/lugares.html">Lugares</a></li>
-                <li><a href="./pages/reseñas.html">Reseñas</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
+                <li class="secciones"> <a href="./index.html" id="home">Home</a></li>
+                <li class="secciones"><a href="./pages/lugares.html" id="lugares">Lugares</a></li>
+                <li class="secciones"><a href="./pages/reseñas.html" id="reseñas">Reseñas</a></li>
+                <li class="secciones"><a href="./pages/faq.html" id="faq">FAQ</a></li>
             </ul>
         </nav>
-        </header>
+    </header>
 
-        <br><br><br><br>
-
-        <main>
-            <h2>Quienes somos?</h2>
+        <main id="contenidoIndex">
+            <article id="articuloIndex"><!--Introduccion-->
+                <h2>¿Quienes somos?</h2>
                 <p id="descripcion">
                     Somos tu mejor opcion en cuanto a turismo argentino se refiere, te ofrecemos todo un pais junto con momentos inolvidables.
                 </p>
-
-                <br><br>
-
-                <p id="segundoTexto">
-                    Todo un pais al alcance de un click.
-                </p>
+            </article>
+            <br><br>
+            <section id="sectionIndex"><!--Seccion2 con imagenes-->
+                <div id="imgEjemplo">
+                    <p id="segundoTexto">
+                        Todo un pais al alcance de un click.
+                    </p>
                 
-                <div id="imagenesEjemplo">
-                    <img src="./assets/images/imagen-demostrativa 1.jpeg" alt="el cerro de los siete colores" id="imagen1">
-
-                    <img src="./assets/images/imagen-demostrativa 2.jpeg" alt="cordoba" id="imagen2">
+                        <img src="./assets/images/imagen-demostrativa 1.jpeg" alt="el cerro de los siete colores" id="imagen1" class="imagenesIndex">
+                    
+                        <img src="./assets/images/imagen-demostrativa 2.jpeg" alt="cordoba" id="imagen2" class="imagenesIndex">
                 </div>
+            </section>
             </main>
 
             <footer>
                 <nav id="navegacionInferior">
-                    <a href="#"><img src="./assets/icons/logo-facebook.png" alt="logo-facebook" class="redesSociales" id="facebook">
-                    </a>
-
-                    <a href="#"><img src="./assets/icons/logo-instagram.png" alt="logo-instagram" class="redesSociales" id="instagram">
-                    </a>
-                    
-                    <a href="./pages/contacto.html"><h2 id="contactanos">Contactanos</h2></a>
+                    <div class="redes">
+                        <a href="#" ><img src="./assets/icons/logo-facebook.png" alt="logo-facebook" id="facebook" class="redesSociales">
+                        </a>
+                    </div>
+                    <div class="redes">
+                        <a href="#" ><img src="./assets/icons/logo-instagram.png" alt="logo-instagram" id="instagram" class="redesSociales">
+                        </a>
+                    </div>
+                        
+                    <a href="./pages/contacto.html" id="linkContacto"><h2 id="contactanos">Contactanos</h2></a>
                 </nav>
-                </footer>
-                
+            </footer>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
                     </body>
                         </html>

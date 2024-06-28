@@ -9,6 +9,160 @@
    padding: 0;
 }
 
+/* Index */
+/* Itroduccion */
+#contenidoIndex {
+   background-image: url(../assets/images/background1.jpg);
+   display: grid;
+   grid-template-areas: 
+   "pregunta"
+   "introduccion"
+   "sectionIn"
+   "imagen1"
+   "imagen2"
+   ;
+   gap: 10px;
+   width: 100%;
+}
+
+#articuloIndex {
+   grid-area: pregunta;
+   background-color: #8AA39B;
+   text-align: center;
+   color: #A7FFF6;
+}
+
+#descripcion {
+   grid-area: introduccion;
+   background-color: #8AA39B;
+   font-family: RobotoMono;
+   font-size: 20px;
+}
+/* Imagenes de Ejemplo */
+#sectionIndex p {
+   grid-area: sectionIn;
+}
+
+#imagen1 {
+   grid-area: imagen1;
+}
+
+#imagen2 {
+   grid-area: imagen2;
+   padding-top: 20px;
+}
+
+#segundoTexto {
+   background-color: #A4F9C8;
+   text-align: center;
+   font-family: RobotoMono;
+   font-size: 20px;
+}
+
+#imgEjemplo {
+   grid-area: imgEjem;
+   background-color: #A4F9C8;
+   padding-bottom: 20px;
+   text-align: center;
+}
+/* Media Querie General */
+@media (min-width: 768px) {
+   /* NavBar */
+   h1 {
+      font-family: Italianno;
+      color: #95D9C3;
+      grid-area: titulo;
+      font-size: 80px;
+      width: 100%;
+      text-align: left;
+      padding-left: 50px;
+   }
+
+   .secciones {
+      display: inline-block;
+      justify-content: center;
+      padding: 35px;
+      font-size: large;
+   }
+/* Main de Index */
+   main h2 {
+      font-size: 100px;
+      padding: 40px;
+   }
+
+   #imgEjemplo {
+      text-align: center;
+      padding-top: 20px;
+   }
+
+   #imagen2 {
+      padding-bottom: 20px;
+   }
+/* Footer */
+   #navegacionInferior {
+      background-color: #5C6F68;
+      display: grid;
+      grid-template-columns: 1fr 10fr 2fr;
+      grid-template-areas: 
+      "facebook instagram contacto"
+      ;
+      justify-content: start;
+      align-content: center;
+   }
+
+   #facebook {
+      grid-area: facebook;
+   }
+
+   #instagram {
+      grid-area: instagram;
+   }
+
+   #linkContacto {
+      grid-area: contacto;
+   }
+
+   #contactanos {
+      display: flex;
+      justify-content: right;
+      padding-right: 20px;
+   }
+}
+/* Media Querie de Index */
+@media (min-width: 1024px) {
+   /* main */
+   #contenidoIndex {
+      display: grid;
+      grid-template-areas: 
+      "pregunta"
+      "introduccion"
+      "sectionIn"
+      "imagen1"
+      "imagen2"
+      ;
+      width: 100%;
+   }
+
+   #articuloIndex {
+      width: 100%;
+   }
+
+   #contenidoIndex h2 {
+      width: 100%;
+   }
+
+   #imgEjemplo {
+      text-align: center;
+      padding-top: 20px;
+   }
+
+   #imagen2 {
+      padding-bottom: 20px;
+   }
+}
+
+/* Pagina de Contacto */
+/* Navegacion */
 h1 {
    font-family: Italianno;
    color: #95D9C3;
@@ -39,6 +193,7 @@ a {
    color: #A7FFF6;
 }
 
+/* Main de Contacto */
 #contenido {
    display:grid;
    justify-content: center;
@@ -60,7 +215,7 @@ main h2 {
    display: grid;
    padding: 5px;
 }
-
+/* Footer */
 #navegacionInferior {
    background-color: #5C6F68;
    display: grid;
@@ -91,7 +246,7 @@ main h2 {
    font-family: Pacifico;
    padding: 5px;
 }
-
+/* Media Querie General */
 @media (min-width: 1024px) {
    h1 {
       font-family: Italianno;
@@ -109,12 +264,12 @@ main h2 {
       padding: 35px;
       font-size: large;
    }
-
+/* Contenido de Contacto */
    main h2 {
       font-size: 100px;
       padding: 40px;
    }
-
+/* Footer */
    #navegacionInferior {
       background-color: #5C6F68;
       display: grid;
@@ -124,11 +279,10 @@ main h2 {
       ;
       justify-content: start;
       align-items: center;
-
    }
 
    #facebook {
-      grid-area: faccebook;
+      grid-area: facebook;
    }
 
    #instagram {
