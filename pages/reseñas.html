@@ -8,59 +8,66 @@
     <title>TurismoArg</title>
 </head>
 
-<body>
+<body class="body__reseñas">
     <header>
         <nav id="navegacionSuperior">
             <h1>TurismoArg</h1>
             <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li><a href="../pages/lugares.html">Lugares</a></li>
-                <li><a href="../pages/reseñas.html">Reseñas</a></li>
-                <li><a href="../pages/faq.html">FAQ</a></li>
+                <li class="secciones"> <a href="../index.html" id="home">Home</a></li>
+                <li class="secciones"><a href="../pages/lugares.html" id="lugares">Lugares</a></li>
+                <li class="secciones"><a href="../pages/reseñas.html" id="reseñas">Reseñas</a></li>
+                <li class="secciones"><a href="../pages/faq.html" id="faq">FAQ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <p>
-            “Muy buen servicio,
-            amabilidad y atencion en todo momento.”
-        </p>
-        <br><br>
-
-        <p>
-            “Deliciosa comida y
-            habitaciones comodas.”
-        </p>
-        <br><br>
-
-        <p>
-            “Hermosas habitaciones,
-            bastante limpias y buen
-            servicio a habitaciones.”
-        </p>
-        <br><br>
-
-        <fieldset>
-            <textarea name="Reseña" id="reseña" rows="20" cols="50" placeholder="Reseña"></textarea>
+    <main class="main__reseñas">
+            <div id="reseña1" class="reseña">
+                <p>
+                    “Muy buen servicio,
+                    amabilidad y atencion en todo momento.”
+                </p>
+            </div>
             <br><br>
-
-            <button>
-                Publicar
-            </button>
-        </fieldset>
+            <div id="reseña2" class="reseña">
+                <p>
+                    “Deliciosa comida y
+                    habitaciones comodas.”
+                </p>
+            </div>
+            <br><br>
+            <div id="reseña3" class="reseña">
+                <p>
+                    “Hermosas habitaciones,
+                    bastante limpias y buen
+                    servicio a habitaciones.”
+                </p>
+            </div>
+            <br><br>
+            
+            <div class="reseñaContainer">
+                <textarea name="Reseña" id="reseña" rows="20" cols="50" placeholder="Reseña"></textarea>
+            </div>
+            <div id="botonReseña">
+                <button id="botonPublicar">
+                    Publicar
+                </button>
+            </div>
         </main>
         <br><br>
 
         <footer>
             <nav id="navegacionInferior">
-                <a href="#"><img src="../assets/icons/logo-facebook.png" alt="logo-facebook" class="redesSociales" id="facebook">
-                </a>
-
-                <a href="#"><img src="../assets/icons/logo-instagram.png" alt="logo-instagram" class="redesSociales" id="instagram">
-                </a>
-                
-                <a href="../pages/contacto.html"><h2 id="contactanos">Contactanos</h2></a>
+                <div class="redes">
+                    <a href="#" ><img src="../assets/icons/logo-facebook.png" alt="logo-facebook" id="facebook" class="redesSociales">
+                    </a>
+                </div>
+                <div class="redes">
+                    <a href="#" ><img src="../assets/icons/logo-instagram.png" alt="logo-instagram" id="instagram" class="redesSociales">
+                    </a>
+                </div>
+                    
+                <a href="../pages/contacto.html" id="linkContacto"><h2 id="contactanos">Contactanos</h2></a>
             </nav>
         </footer>
             </body>

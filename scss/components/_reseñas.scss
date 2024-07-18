@@ -1,0 +1,86 @@
+.body__reseñas {
+    background-image: url(../assets/images/background3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main__reseñas {
+    display: grid;
+    grid-template-areas: 
+    "reseña1 reseña2 reseña3"
+    "reseña reseña reseña"
+    "boton boton boton"
+    ;
+    align-items: center;
+}
+
+#reseña1 {
+    grid-area: reseña1;
+}
+
+#reseña2 {
+    grid-area: reseña2;
+}
+
+#reseña3 {
+    grid-area: reseña3;
+}
+
+.reseña {
+    display: flex;
+    background-color: $color-2;
+    margin-top: 30px;
+    padding: 10px;
+    border: solid 4px black;
+    font-family: Roboto;
+    font-size: 25px;
+}
+
+.reseñaContainer {
+    background-color: $color-3;
+    grid-area: reseña;
+    display: flex;
+    justify-content: center;
+    border: solid 1px white;
+    padding: 15px;
+}
+
+#reseña {
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+#botonReseña {
+    background-color: $color-3;
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#botonPublicar {
+    padding: 5px;
+    background-color: $color-5;
+    color: black;
+    font-family: Roboto;
+    border: solid 1px $color-5;
+    border-radius: 10px;
+}
+
+@media (max-width: 425px) {
+    .main__reseñas {
+        display: grid;
+        grid-template-areas: 
+        "reseña1"
+        "reseña2" 
+        "reseña3"
+        "reseña"
+        "boton"
+        ;
+        justify-content: center;
+        .reseña {
+            font-size: 15px;
+        }
+    }
+}
