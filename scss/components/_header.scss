@@ -1,0 +1,60 @@
+header {
+    h1 {
+        font-family: Italianno;
+        color: $color-3;
+        grid-area: titulo;
+        font-size: 50px;
+    }
+    body {
+        background-color: $color-3;
+    }
+    #navegacionSuperior {
+        background-color: $color-1;
+        display: grid;
+        grid-template-areas: "titulo secciones";
+        align-items: center;
+        justify-items: center;
+    }
+    ul li {
+        grid-area: secciones;
+    }
+    a {
+        text-decoration: none;
+        color: $color-5;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-family: Italianno;
+        color: $color-3;
+        grid-area: titulo;
+        font-size: 80px;
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+    }
+    .secciones {
+        display: inline-block;
+        justify-content: center;
+        padding: 35px;
+        font-size: large;
+    }
+    @media (min-width: 1024px) {
+        h1 {
+        font-family: Italianno;
+        color: $color-3;
+        grid-area: titulo;
+        font-size: 80px;
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        }
+        .secciones {
+        display: inline-block;
+        justify-content: center;
+        padding: 35px;
+        font-size: large;
+        }
+    }
+}

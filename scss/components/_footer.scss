@@ -1,0 +1,84 @@
+footer {
+    #navegacionInferior {
+        background-color: $color-1;
+        display: grid;
+        grid-template-columns: 1fr 5fr 2fr;
+        grid-template-areas: "logo1 logo2 contacto";
+        align-items: center;
+    }
+    
+    .redes {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #facebook {
+        width: 100%;
+        grid-area: logo1;
+        padding: 6px;
+    }
+    
+    #instagram {
+        width: 100%;
+        grid-area: logo2;
+        padding: 6px;
+    }
+    
+    #contactanos {
+        grid-area: contacto;
+        font-family: Pacifico;
+        padding: 6px;
+        color: $color-3;
+        text-decoration: none;
+    }
+    
+    @media (min-width: 768px) {
+        #navegacionInferior {
+        background-color: $color-1;
+        grid-template-columns: 1fr 8fr 2fr;
+        grid-template-areas: "facebook instagram contacto";
+        justify-content: start;
+        align-items: center;
+    }
+    #facebook {
+        grid-area: facebook;
+    }
+    #instagram {
+        grid-area: instagram;
+    }
+    #linkContacto {
+        grid-area: contacto;
+    }
+    #contactanos {
+        display: grid;
+        justify-content: right;
+        padding-right: 20px;
+    }
+
+    @media (min-width: 1024px) {
+        #navegacionInferior {
+            background-color: $color-1;
+            display: grid;
+            grid-template-columns: 1fr 13fr 1fr;
+            grid-template-areas: "facebook instagram contacto";
+            justify-content: start;
+            align-items: center;
+        }
+        #facebook {
+            grid-area: facebook;
+        }
+        #instagram {
+            grid-area: instagram;
+        }   
+        #linkContacto {
+            grid-area: contacto;
+        }   
+        #contactanos {
+            display: flex;
+            justify-content: right;
+            padding-right: 20px;
+        }
+    }
+}
+}
+

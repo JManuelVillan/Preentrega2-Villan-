@@ -1,0 +1,30 @@
+.body__contacto {
+    background-color: $color-3;
+}
+#contenido {
+    display: grid;
+    justify-content: center;
+}
+.main__contacto h2 {
+    display: grid;
+    justify-content: center;
+    font-family: Italianno;
+    font-size: 55px;
+}
+#botonEnviar {
+    background-color: $color-1;
+    color: $color-5;
+}
+
+@media (min-width: 768px) {
+    #encabezadoContacto {
+        font-size: 90px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main h2 {
+        font-size: 35px;
+        padding: 40px;
+    }
+}
