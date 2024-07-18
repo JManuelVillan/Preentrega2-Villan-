@@ -30,6 +30,10 @@ footer {
         padding: 6px;
         color: $color-3;
         text-decoration: none;
+        transition: 2s;
+        &:hover {
+            color: $color-2;
+        }
     }
     
     @media (min-width: 768px) {

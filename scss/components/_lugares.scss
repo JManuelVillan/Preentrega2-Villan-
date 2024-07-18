@@ -4,7 +4,109 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 .main__lugares {
     display: grid;
+    grid-template-areas:
+    "jujuy cordoba neuquen"
+    "santafe tierraf rionegro"
+    ;
+    justify-content: space-around;
+    padding-top: 100px;
 }
+
+#jujuy {
+    border: solid 3px $color-5;
+    background-color: $color-3;
+    grid-area: jujuy;
+    margin-top: 70px;
+}
+
+#cordoba {
+    border: solid 3px $color-5;
+    background-color: $color-3;
+    grid-area: cordoba;
+    margin-top: 70px;
+}
+
+#neuquen {
+    border: solid 3px $color-5;
+    background-color: $color-3;
+    grid-area: neuquen;
+    margin-top: 70px;
+}
+
+#santaFe {
+    border: solid 3px $color-5;
+    background-color: $color-3;
+    grid-area: santafe;
+    margin-top: 70px;
+}
+
+#tierradelFuego {
+    border: solid 3px $color-5;
+    background-color: $color-3;
+    grid-area: tierraf;
+    margin-top: 70px;
+}
+
+#rioNegro {
+    border: solid 3px $color-5;
+    background-color: $color-3;
+    grid-area: rionegro;
+    margin-top: 70px;
+}
+
+.nombre__lugar {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    color: black;
+    font-size: 1.6rem;
+}
+
+.imagen__lugar {
+    border: solid 4px black;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lugares__button {
+    padding: 10px;
+    background-color: $color-1;
+    color: $color-5;
+    font-family: Roboto;
+    border: solid 2px $color-1;
+}
+
+@media (max-width: 768px) {
+    .main__lugares {
+        display: grid;
+        grid-template-areas:
+        "jujuy cordoba" 
+        "neuquen santafe" 
+        "tierraf rionegro"
+        ;
+        justify-content: space-evenly;
+        padding-top: 100px;
+    }
+
+    @media (max-width: 614px) {
+        .main__lugares {
+            display: grid;
+            grid-template-areas:
+            "jujuy" 
+            "cordoba" 
+            "neuquen"
+            "santafe" 
+            "tierraf" 
+            "rionegro"
+            ;
+            justify-content: space-around;
+            padding-top: 100px;
+        }
+    }
+} 

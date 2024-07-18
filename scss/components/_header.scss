@@ -17,10 +17,19 @@ header {
     }
     ul li {
         grid-area: secciones;
+        transition: 1.5s;
+        &:hover {
+            transform: scale(1.5);
+            color: $color-5;
+        }
     }
     a {
         text-decoration: none;
         color: $color-5;
+        transition: 1s;
+        &:hover {
+            color: $color-3;
+        }
     }
 }
 

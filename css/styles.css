@@ -33,6 +33,10 @@ footer #contactanos {
   padding: 6px;
   color: #95D9C3;
   text-decoration: none;
+  transition: 2s;
+}
+footer #contactanos:hover {
+  color: #8AA39B;
 }
 @media (min-width: 768px) {
   footer #navegacionInferior {
@@ -100,10 +104,19 @@ header #navegacionSuperior {
 }
 header ul li {
   grid-area: secciones;
+  transition: 1.5s;
+}
+header ul li:hover {
+  transform: scale(1.5);
+  color: #A7FFF6;
 }
 header a {
   text-decoration: none;
   color: #A7FFF6;
+  transition: 1s;
+}
+header a:hover {
+  color: #95D9C3;
 }
 
 @media (min-width: 768px) {
@@ -344,6 +357,94 @@ header a {
 
 .main__lugares {
   display: grid;
+  grid-template-areas: "jujuy cordoba neuquen" "santafe tierraf rionegro";
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+#jujuy {
+  border: solid 3px #A7FFF6;
+  background-color: #95D9C3;
+  grid-area: jujuy;
+  margin-top: 70px;
+}
+
+#cordoba {
+  border: solid 3px #A7FFF6;
+  background-color: #95D9C3;
+  grid-area: cordoba;
+  margin-top: 70px;
+}
+
+#neuquen {
+  border: solid 3px #A7FFF6;
+  background-color: #95D9C3;
+  grid-area: neuquen;
+  margin-top: 70px;
+}
+
+#santaFe {
+  border: solid 3px #A7FFF6;
+  background-color: #95D9C3;
+  grid-area: santafe;
+  margin-top: 70px;
+}
+
+#tierradelFuego {
+  border: solid 3px #A7FFF6;
+  background-color: #95D9C3;
+  grid-area: tierraf;
+  margin-top: 70px;
+}
+
+#rioNegro {
+  border: solid 3px #A7FFF6;
+  background-color: #95D9C3;
+  grid-area: rionegro;
+  margin-top: 70px;
+}
+
+.nombre__lugar {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.imagen__lugar {
+  border: solid 4px black;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lugares__button {
+  padding: 10px;
+  background-color: #5C6F68;
+  color: #A7FFF6;
+  font-family: Roboto;
+  border: solid 2px #5C6F68;
+}
+
+@media (max-width: 768px) {
+  .main__lugares {
+    display: grid;
+    grid-template-areas: "jujuy cordoba" "neuquen santafe" "tierraf rionegro";
+    justify-content: space-evenly;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 768px) and (max-width: 614px) {
+  .main__lugares {
+    display: grid;
+    grid-template-areas: "jujuy" "cordoba" "neuquen" "santafe" "tierraf" "rionegro";
+    justify-content: space-around;
+    padding-top: 100px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
