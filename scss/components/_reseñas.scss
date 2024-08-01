@@ -8,79 +8,98 @@
 .main__reseñas {
     display: grid;
     grid-template-areas: 
-    "reseña1 reseña2 reseña3"
-    "reseña reseña reseña"
-    "boton boton boton"
+    "reseña1"
+    "reseña2"
+    "reseña3"
+    "reseña"
+    "boton"
     ;
-    align-items: center;
 }
 
 #reseña1 {
     grid-area: reseña1;
+    width: 70%;
 }
 
 #reseña2 {
     grid-area: reseña2;
+    width: 70%;
 }
 
 #reseña3 {
     grid-area: reseña3;
+    width: 70%;
 }
 
 .reseña {
-    display: flex;
-    background-color: $color-2;
-    margin-top: 30px;
-    padding: 10px;
-    border: solid 4px black;
+    text-align: center;
+    text-decoration: solid;
+    color: black;
     font-family: Roboto;
-    font-size: 25px;
-}
-
-.reseñaContainer {
-    background-color: $color-3;
-    grid-area: reseña;
-    display: flex;
-    justify-content: center;
-    border: solid 1px white;
-    padding: 15px;
+    background-color: $color-2;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    margin-left: 55px;
+    padding: 5px;
 }
 
 #reseña {
-    border: solid 1px white;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border: 1px solid white;
+}
+
+#reseñaContainer {
+    grid-area: reseña;
+    display: flex;
+    justify-content: center;
+    background-color: $color-3;
 }
 
 #botonReseña {
-    background-color: $color-3;
     grid-area: boton;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 10px;
+    justify-content: end;
+    background-color: $color-3;
 }
 
 #botonPublicar {
     padding: 5px;
-    background-color: $color-5;
-    color: black;
-    font-family: Roboto;
-    border: solid 1px $color-5;
+    margin: 10px;
     border-radius: 10px;
+    background-color: $color-5;
+    border: solid 1px $color-5;
+    color: black;
 }
 
-@media (max-width: 425px) {
-    .main__reseñas {
-        display: grid;
-        grid-template-areas: 
-        "reseña1"
-        "reseña2" 
-        "reseña3"
-        "reseña"
-        "boton"
-        ;
-        justify-content: center;
-        .reseña {
-            font-size: 15px;
-        }
+@media (min-width: 426px) {
+    #reseña1 {
+        width: 80%;
+    }
+    #reseña2 {
+        width: 80%;
+    }
+    #reseña3 {
+        width: 80%;
+    }
+    #reseña {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    #reseña1 {
+        width: 90%;
+    }
+    #reseña2 {
+        width: 90%;
+    }
+    #reseña3 {
+        width: 90%;
     }
 }

@@ -11,9 +11,41 @@
     font-family: Italianno;
     font-size: 55px;
 }
+
+#emailText {
+    border: solid 1px white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+#asuntoText {
+    border: solid 1px white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+#textArea__contacto {
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+#boton__contacto {
+    display: flex;
+    justify-content: center;
+}
+
 #botonEnviar {
     background-color: $color-1;
     color: $color-5;
+    border: solid 1px $color-1;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
 }
 
 @media (min-width: 768px) {
