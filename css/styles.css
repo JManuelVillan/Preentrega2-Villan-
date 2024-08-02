@@ -7,6 +7,41 @@
   padding: 0;
 }
 
+.mibgColor1 {
+  background-color: #5C6F68 !important;
+}
+
+.tituloPrin {
+  font-family: Italianno;
+  font-size: 3rem;
+  color: #95D9C3;
+}
+
+.seccionesSt {
+  font-family: Roboto;
+  font-size: 1rem;
+}
+
+.miColor1 {
+  color: #5C6F68;
+}
+
+.miColor2 {
+  color: #8AA39B;
+}
+
+.miColor3 {
+  color: #95D9C3;
+}
+
+.miColor4 {
+  color: #A4F9C8;
+}
+
+.miColor5 {
+  color: #A7FFF6;
+}
+
 footer #navegacionInferior {
   background-color: #5C6F68;
   display: grid;
