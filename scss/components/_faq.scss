@@ -1,25 +1,36 @@
+// Contenido de FAQ
 .contenedor-acordeon {
     width: 100%;
     max-width: 800px;
     margin: auto;
     margin-top: 80px;
+    // Encabezado
     h2{
         text-align: center;
-        font-size: 70px;
+        font-size: 75px;
         margin-bottom: 30px;
         font-family: Italianno;
         color: black;
     }
 }
-
+// Pregunta Frecuentes
+.body__faq {
+    background-color: $color-2;
+}
 .acordeon {
     background: $color-3;
+    .pregunta-acordeon {
+        font-family: Roboto Condensed;
+        color: $color-4;
+    }
+    // Respuesta a Pregunta
     .contenido-acordeon {
         padding: 0;
         margin: 0px 20px;
         max-height: 0;
         overflow: hidden;
         transition: all 300ms ease;
+        font-family: RobotoFlex;
     }
     label {
         display: block;
@@ -44,7 +55,7 @@
 .btn-acordeon {
     display: none;
 }
-
+// MediaQ de Mobile a Desktop
 @media (min-width: 320px) and (max-width: 1024px){
     .contenedor-acordeon {
         h2 {
@@ -52,15 +63,11 @@
         }
     }
 }
-
+// MediaQ especifica para arreglar un fallo
 @media screen and (max-width: 900px) {
     .contenedor-acordeon {
         width: 100%;
     }
-}
-
-.body__faq {
-    background-color: $color-2;
 }
 
 

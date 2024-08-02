@@ -1,4 +1,5 @@
 footer {
+    // navBar
     #navegacionInferior {
         background-color: $color-1;
         display: grid;
@@ -6,7 +7,7 @@ footer {
         grid-template-areas: "logo1 logo2 contacto";
         align-items: center;
     }
-    
+    // Redes Sociales
     .redes {
         width: 50px;
         height: 50px;
@@ -23,7 +24,7 @@ footer {
         grid-area: logo2;
         padding: 6px;
     }
-    
+    // Link Contacto
     #contactanos {
         grid-area: contacto;
         font-family: Pacifico;
@@ -35,7 +36,7 @@ footer {
             color: $color-2;
         }
     }
-    
+    // MediaQ Tablet
     @media (min-width: 768px) {
         #navegacionInferior {
         background-color: $color-1;
@@ -58,7 +59,7 @@ footer {
         justify-content: right;
         padding-right: 20px;
     }
-
+// MediaQ Desktop
     @media (min-width: 1024px) {
         #navegacionInferior {
             background-color: $color-1;

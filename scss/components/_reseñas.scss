@@ -1,10 +1,11 @@
+// Background
 .body__reseñas {
     background-image: url(../assets/images/background3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+// Distribucion de contenido
 .main__reseñas {
     display: grid;
     grid-template-areas: 
@@ -30,20 +31,20 @@
     grid-area: reseña3;
     width: 70%;
 }
-
+// Reseñas
 .reseña {
     text-align: center;
     text-decoration: solid;
     color: black;
-    font-family: Roboto;
+    font-family: Roboto Condensed;
     background-color: $color-2;
     margin-bottom: 10px;
     margin-top: 10px;
-    border: 1px solid black;
+    border: 1px solid $color-2;
     margin-left: 55px;
     padding: 5px;
 }
-
+// TextArea de Reseña
 #reseña {
     width: 100%;
     border-radius: 10px;
@@ -59,7 +60,7 @@
     justify-content: center;
     background-color: $color-3;
 }
-
+// Boton publicar
 #botonReseña {
     grid-area: boton;
     width: 100%;
@@ -75,8 +76,15 @@
     background-color: $color-5;
     border: solid 1px $color-5;
     color: black;
+    &:active {
+        transition: 200ms;
+        transform: scale(0.9);
+        background-color: $color-1;
+        color: $color-5;
+        border: solid 1px $color-1;
+    }
 }
-
+// MediaQ Mobile
 @media (min-width: 426px) {
     #reseña1 {
         width: 80%;
@@ -91,15 +99,30 @@
         width: 100%;
     }
 }
-
-@media (min-width: 769px) {
+// MediaQ Tablet y Desktop
+@media (min-width: 768px) {
+    .main__reseñas {
+        display: grid;
+        grid-template-areas:
+        "reseña1 reseña2 reseña3"
+        "reseña reseña reseña"
+        "boton boton boton"
+        ;
+    }
+    
     #reseña1 {
-        width: 90%;
+        width: 80%;
+        grid-area: reseña1;
     }
     #reseña2 {
-        width: 90%;
+        width: 80%;
+        grid-area: reseña2;
     }
     #reseña3 {
-        width: 90%;
+        width: 75%;
+        grid-area: reseña3;
+    }
+    .reseña {
+        font-size: 1.5rem;
     }
 }

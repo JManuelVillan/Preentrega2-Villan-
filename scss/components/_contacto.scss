@@ -1,3 +1,4 @@
+// Contenido de Contacto
 .body__contacto {
     background-color: $color-3;
 }
@@ -11,7 +12,7 @@
     font-family: Italianno;
     font-size: 55px;
 }
-
+// Formulario
 #emailText {
     border: solid 1px white;
     padding-left: 10px;
@@ -46,14 +47,21 @@
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 5px;
+    &:active {
+        transition: 200ms;
+        transform: scale(0.9);
+        background-color: $color-5;
+        color: black;
+        border: solid 1px $color-5;
+    }
 }
-
+// MediaQ de Tablet
 @media (min-width: 768px) {
     #encabezadoContacto {
         font-size: 90px;
     }
 }
-
+// MediaQ de Desktop
 @media (min-width: 1024px) {
     main h2 {
         font-size: 35px;

@@ -1,9 +1,11 @@
+// Background
 .body__lugares {
     background-image: url(../assets/images/background2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+// Distribucion del Contenido
 .main__lugares {
     display: grid;
     grid-template-areas:
@@ -13,7 +15,7 @@
     justify-content: space-around;
     padding-top: 100px;
 }
-
+// Contenedores
 #jujuy {
     border: solid 3px $color-5;
     background-color: $color-3;
@@ -55,19 +57,20 @@
     grid-area: rionegro;
     margin-top: 70px;
 }
-
+// Nombre
 .nombre__lugar {
     display: flex;
     justify-content: center;
-    font-family: Roboto;
+    font-family: Roboto Condensed;
     color: black;
     font-size: 1.6rem;
+    margin-top: 7px;
 }
-
+// Bordes de imagenes
 .imagen__lugar {
     border: solid 4px black;
 }
-
+// Botones
 .buttonContainer{
     display: flex;
     justify-content: center;
@@ -80,8 +83,15 @@
     color: $color-5;
     font-family: Roboto;
     border: solid 2px $color-1;
+    &:active {
+        transition: 200ms;
+        transform: scale(0.9);
+        background-color: $color-4;
+        color: black;
+        border: solid 1px $color-4;
+    }
 }
-
+// MediaQ Tablet y Mobile
 @media (max-width: 768px) {
     .main__lugares {
         display: grid;
@@ -93,7 +103,7 @@
         justify-content: space-evenly;
         padding-top: 100px;
     }
-
+// MediaQ para distribucion de contenedores
     @media (max-width: 614px) {
         .main__lugares {
             display: grid;

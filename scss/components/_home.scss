@@ -1,3 +1,4 @@
+// Background y distribucion del Contenido
 #contenidoIndex {
     background-image: url(../assets/images/background1.jpg);
     background-position: center center;
@@ -14,17 +15,20 @@
     gap: 10px;
     width: 100%;
     font-family: Italianno;
+    // MediaQ Mobile
     @media (min-width: 320px) {
         #encabezadoIndex {
             font-size: 55px;
         }
     }
+    // MediaQ Table
     @media (min-width: 768px) {
         #encabezadoIndex {
             font-size: 75px;
         }
     }
 }
+// Pregunta Introductoria y respuesta
 #articuloIndex {
     grid-area: pregunta;
     background-color: $color-2;
@@ -34,7 +38,7 @@
 #descripcion {
     grid-area: introduccion;
     background-color: $color-2;
-    font-family: RobotoMono;
+    font-family: RobotoFlex;
     font-size: 20px;
 }
   /* Imagenes de Ejemplo */
@@ -51,7 +55,7 @@
 #segundoTexto {
     background-color: $color-4;
     text-align: center;
-    font-family: Roboto;
+    font-family: RobotoFlex;
     font-size: 18px;
 }
 #imgEjemplo {
@@ -61,6 +65,10 @@
     text-align: center;
 }
 
+.imagenesIndex {
+    width: 400px;
+}
+// MediaQ Tablet
 @media (min-width: 768px) {
     #encabezadoIndex {
         font-size: 100px;
@@ -69,7 +77,6 @@
     
     #segundoTexto {
         font-size: 25px;
-        font-family: Roboto;
     }
     
     #imgEjemplo {
@@ -81,7 +88,13 @@
         padding-bottom: 20px;
     }
 }
-
+// Tablet y Mobile
+@media (max-width: 768px) {
+    .imagenesIndex {
+        width: 300px;
+    }
+}
+// MediaQ Desktop
 @media (min-width: 1024px) {
     #contenidoIndex {
         display: grid;
