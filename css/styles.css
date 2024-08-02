@@ -526,6 +526,7 @@ header a:hover {
   color: #A7FFF6;
   font-family: Roboto;
   border: solid 2px #5C6F68;
+  text-decoration: none;
 }
 .lugares__button:active {
   transition: 200ms;
